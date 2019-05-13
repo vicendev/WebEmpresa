@@ -21,6 +21,14 @@ from django.conf import settings
 urlpatterns = [
     # Path del core
     path('', include('core.urls')),
+    # Path de services
+    path('services/', include('services.urls')),
+    # Path de blog
+    path('blog/', include('blog.urls')),
+    # Path de pages
+    path('page/', include('pages.urls')),
+    # Path de contanct
+    path('contact/', include('contact.urls')),
     path('admin/', admin.site.urls),
 ]
 
